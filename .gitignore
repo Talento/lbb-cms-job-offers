@@ -32,3 +32,6 @@ test/dummy/.sass-cache
 .rvmrc
 .powrc
 .ruby-version
+
+*.rbc
+capybara-*.html
