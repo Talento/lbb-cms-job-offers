@@ -1,0 +1,5 @@
+<%= simple_form_for [:job_offer, @job_application] do |f| %>
+  <%= f.input :job_offer_id, as: :hidden, input_html: {value: @job_offer.id} %>
+  <%= f.input :cv, as: :file %>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
