@@ -1,7 +1,7 @@
 module LbbCmsJobOffers
   class JobOffer < ActiveRecord::Base
-    include Liberbank::Seasonable
-    include Liberbank::FriendlyGlobalize
+    include LbbCms::Seasonable
+    include LbbCms::FriendlyGlobalize
     extend FriendlyId
 
     validates :name, :description, presence: true
