@@ -1,8 +1,8 @@
 module LbbCmsJobOffers
   class JobOffer < ActiveRecord::Base
-    include LbbCms::Seasonable
-    include LbbCms::FriendlyGlobalize
+    include Seasonable
     extend FriendlyId
+    include FriendlyGlobalize
 
     validates :name, :description, presence: true
 

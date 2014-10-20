@@ -1,3 +1,20 @@
+GIT
+  remote: git@github.com:the-cocktail/friendly-globalize.git
+  revision: 9609f7e284da687b10dff70b25e659e2a886fd9f
+  specs:
+    friendly_globalize (0.0.1)
+      friendly_id (~> 5.0.4)
+      friendly_id-globalize (~> 1.0.0.alpha1)
+      globalize (~> 4.0.2)
+      globalize-accessors (~> 0.1.5)
+
+GIT
+  remote: git@github.com:the-cocktail/seasonable.git
+  revision: c64ffaaf3baecd648f1a6c5cd0a6a37ca822685f
+  specs:
+    seasonable (0.0.1)
+      rails (~> 4.1.6)
+
 PATH
   remote: .
   specs:
@@ -197,9 +214,11 @@ DEPENDENCIES
   database_cleaner (~> 1.3.0)
   factory_girl_rails (~> 4.0)
   faker (~> 1.4.3)
+  friendly_globalize!
   lbb_cms_job_offers!
   minitest-rails-capybara (~> 2.1.1)
   minitest-reporters (~> 1.0.5)
   mysql2 (~> 0.3.16)
   pry (~> 0.10.1)
   pry-remote (~> 0.1.8)
+  seasonable!
