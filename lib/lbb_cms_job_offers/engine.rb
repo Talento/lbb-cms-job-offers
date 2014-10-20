@@ -17,6 +17,7 @@ module LbbCmsJobOffers
     config.generators do |g|
       g.test_framework :minitest, spec: true, fixture: false
     end
-
+    
+    config.i18n.available_locales = [:es, :en]
   end
 end

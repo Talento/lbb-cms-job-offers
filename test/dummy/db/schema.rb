@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020092109) do
+ActiveRecord::Schema.define(version: 20141016083954) do
 
   create_table "lbb_cms_job_offers_job_applications", force: true do |t|
     t.integer  "job_offer_id"
