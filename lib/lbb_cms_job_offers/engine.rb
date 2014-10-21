@@ -6,6 +6,7 @@ require 'inherited_resources'
 require 'paperclip'
 require 'audited-activerecord'
 require 'friendly_id'
+require 'friendly_id/globalize'
 require 'route_translator'
 require 'friendly_globalize'
 require 'jquery-rails'
@@ -17,6 +18,6 @@ module LbbCmsJobOffers
     # Use minitest-spec by default
     config.generators do |g|
       g.test_framework :minitest, spec: true, fixture: false
-    end     
+    end
   end
 end
