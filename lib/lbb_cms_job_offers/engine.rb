@@ -17,10 +17,6 @@ module LbbCmsJobOffers
     # Use minitest-spec by default
     config.generators do |g|
       g.test_framework :minitest, spec: true, fixture: false
-    end
-    
-    # OJO
-    config.i18n.available_locales = [:es, :en]
-     
+    end     
   end
 end
