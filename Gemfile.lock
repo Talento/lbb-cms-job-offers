@@ -8,6 +8,13 @@ GIT
       globalize (~> 4.0.2)
       globalize-accessors (~> 0.1.5)
 
+GIT
+  remote: git@github.com:the-cocktail/seasonable.git
+  revision: 249ef968f080180d526ae5e03d0ec1b9aacc62ff
+  specs:
+    seasonable (0.0.1)
+      rails (~> 4.1.6)
+
 PATH
   remote: .
   specs:
@@ -25,12 +32,6 @@ PATH
       rails (~> 4.1.6)
       route_translator (~> 3.2.4)
       simple_form (~> 3.0.2)
-
-PATH
-  remote: ../seasonable
-  specs:
-    seasonable (0.0.1)
-      rails (~> 4.1.6)
 
 GEM
   remote: https://rubygems.org/
