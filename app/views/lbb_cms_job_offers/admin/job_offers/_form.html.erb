@@ -4,7 +4,7 @@
     <div class="panel-body">
       <%= render partial: 'lbb_cms_job_offers/admin/shared/localized_fields',
                  locals: {fields: {name: {type: :string},
-                                   description: {type: :text}},
+                                   description: {type: :ckeditor}},
                  object: f.object, f: f} %>
     </div>
   </div>
