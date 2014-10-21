@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:the-cocktail/friendly-globalize.git
-  revision: 9609f7e284da687b10dff70b25e659e2a886fd9f
+  revision: b9ce28d77d6d2103745ce4de74609f01222eae64
   specs:
     friendly_globalize (0.0.1)
       friendly_id (~> 5.0.4)
@@ -8,30 +8,29 @@ GIT
       globalize (~> 4.0.2)
       globalize-accessors (~> 0.1.5)
 
-GIT
-  remote: git@github.com:the-cocktail/seasonable.git
-  revision: c64ffaaf3baecd648f1a6c5cd0a6a37ca822685f
-  specs:
-    seasonable (0.0.1)
-      rails (~> 4.1.6)
-
 PATH
   remote: .
   specs:
     lbb_cms_job_offers (0.0.1)
       audited-activerecord (~> 4.0.0)
-      ckeditor (~> 4.1.0)
       friendly_id (~> 5.0.4)
       friendly_id-globalize (~> 1.0.0.alpha1)
       globalize (~> 4.0.2)
       globalize-accessors (~> 0.1.5)
       inherited_resources (~> 1.5.0)
+      jquery-rails (~> 3.1.2)
       kaminari (~> 0.16.1)
       nested_form (~> 0.3.2)
       paperclip (~> 4.2.0)
       rails (~> 4.1.6)
       route_translator (~> 3.2.4)
       simple_form (~> 3.0.2)
+
+PATH
+  remote: ../seasonable
+  specs:
+    seasonable (0.0.1)
+      rails (~> 4.1.6)
 
 GEM
   remote: https://rubygems.org/
@@ -78,9 +77,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    ckeditor (4.1.0)
-      mime-types
-      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -113,6 +109,9 @@ GEM
     inherited_resources (1.5.0)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0)
+    jquery-rails (3.1.2)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.8.1)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
@@ -147,7 +146,6 @@ GEM
     nested_form (0.3.2)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
-    orm_adapter (0.5.0)
     paperclip (4.2.0)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)

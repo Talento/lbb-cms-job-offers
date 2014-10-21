@@ -1,0 +1,22 @@
+<% tab_id ||= "#{f.object.class.name}_#{f.object.id}" %>
+
+<ul class="nav nav-tabs" role="tablist">
+  <% I18n.available_locales.each do |locale| %>
+      <li class="<%= 'active' if locale == I18n.default_locale %>"><a href="#<%= "#{tab_id}_#{locale}" %>" role="tab" data-toggle="tab"> <%= locale %> </a></li>
+  <% end %>
+</ul>
+
+<div class="tab-content">
+  <% I18n.available_locales.each do |locale| %>
+    <div class="tab-pane <%= 'active' if locale == I18n.locale %>" id="<%= "#{tab_id}_#{locale}" %>">
+      <% fields.each_pair do |field, options| %>
+        <% type = options[:type] || :text %>
+        <% if options[:input_html] %>
+          <%= f.input "#{field.to_s}_#{locale.to_s}", as: type, input_html: options[:input_html] %>
+        <% else %>
+          <%= f.input "#{field.to_s}_#{locale.to_s}", as: type %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

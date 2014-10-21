@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141016083954) do
+ActiveRecord::Schema.define(version: 20141020150632) do
 
   create_table "lbb_cms_job_offers_job_applications", force: true do |t|
     t.integer  "job_offer_id"
@@ -42,6 +42,15 @@ ActiveRecord::Schema.define(version: 20141016083954) do
     t.string   "name"
     t.text     "description"
     t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "season_constrains", force: true do |t|
+    t.datetime "starts_at"
+    t.datetime "ends_at"
+    t.integer  "target_id"
+    t.string   "target_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

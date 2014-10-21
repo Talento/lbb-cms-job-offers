@@ -5,6 +5,5 @@ class CreateLbbCmsJobOffersJobApplications < ActiveRecord::Migration
       t.attachment :cv
       t.timestamps
     end
-
   end
 end

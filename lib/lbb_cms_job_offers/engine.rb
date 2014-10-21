@@ -1,13 +1,14 @@
 require 'globalize'
 require 'globalize-accessors'
 require 'simple_form'
+require 'nested_form'
 require 'inherited_resources'
 require 'paperclip'
-require 'kaminari'
 require 'audited-activerecord'
 require 'friendly_id'
 require 'route_translator'
-require 'ckeditor'
+require 'friendly_globalize'
+require 'jquery-rails'
 
 module LbbCmsJobOffers
   class Engine < ::Rails::Engine
@@ -18,6 +19,8 @@ module LbbCmsJobOffers
       g.test_framework :minitest, spec: true, fixture: false
     end
     
+    # OJO
     config.i18n.available_locales = [:es, :en]
+     
   end
 end

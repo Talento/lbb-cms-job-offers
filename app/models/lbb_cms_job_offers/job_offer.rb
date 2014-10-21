@@ -1,6 +1,6 @@
 module LbbCmsJobOffers
   class JobOffer < ActiveRecord::Base
-    include Seasonable
+    include Seasonable::ActsAsSeasonable
     extend FriendlyId
     include FriendlyGlobalize
 

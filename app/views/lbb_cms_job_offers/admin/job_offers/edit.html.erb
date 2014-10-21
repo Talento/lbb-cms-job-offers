@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Editar oferta de trabajo</h3>
+  </div>
+  <div class="panel-body">
+    <%= render partial: 'form' %>
+  </div>
+  <div class="panel-body">
+    <% if @job_offer.job_applications.empty? %>
+      <p>Ningún aplicante para esta oferta</p>
+    <% end %>
+  </div>
+  <div class="panel-heading">
+    <h3 class="panel-title">Curriculumns recibidos</h3>
+  </div>
+  <div class="panel-body">
+    <%= render partial: 'job_application', collection: @job_offer.job_applications %>
+  </div>
+</div>

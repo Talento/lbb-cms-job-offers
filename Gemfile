@@ -4,7 +4,7 @@ source "https://rubygems.org"
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 
-gem 'seasonable', git: 'git@github.com:the-cocktail/seasonable.git'
+gem 'seasonable', path: '../seasonable' # gem 'seasonable', git: 'git@github.com:the-cocktail/seasonable.git'
 gem 'friendly_globalize', git: 'git@github.com:the-cocktail/friendly-globalize.git'
 
 gemspec
