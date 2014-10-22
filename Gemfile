@@ -6,6 +6,7 @@ source "https://rubygems.org"
 
 gem 'seasonable', git: 'git@github.com:the-cocktail/seasonable.git'
 gem 'friendly_globalize', git: 'git@github.com:the-cocktail/friendly-globalize.git'
+gem 'has_seo_fields', git: 'git@github.com:the-cocktail/has-seo-fields.git'
 
 gemspec
 

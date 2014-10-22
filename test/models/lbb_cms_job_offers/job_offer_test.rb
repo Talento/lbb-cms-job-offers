@@ -49,5 +49,29 @@ module LbbCmsJobOffers
       end
     end
     
+    describe "#seo tags " do
+      let(:job_offer){FactoryGirl.create(:job_offer)}
+      
+      it "must have no seo tags when created" do
+        job_offer.seo_tag.must_be_nil
+      end
+      
+      describe "with seo tag attributes" do
+        before(:each) do
+          @attrs = {name: 'test-name', description: 'test-description',
+                    seo_tag_attributes: {seo_meta_description: 'seo-meta-description',
+                                         seo_meta_keywords: 'seo-meta-keywords',
+                                         seo_robot: 'seo-robot',
+                                         seo_title: 'seo-title',
+                                         seo_canonical: 'seo-canonical',
+                                         og_image: 'og-image'}}
+        end
+        
+        it "must have seo tag with attributes specified" do
+          job_offer = LbbCmsJobOffers::JobOffer.create(@attrs)
+          job_offer.seo_tag.wont_be_nil
+        end
+      end
+    end
   end
 end

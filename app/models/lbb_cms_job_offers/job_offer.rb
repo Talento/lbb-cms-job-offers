@@ -3,6 +3,7 @@ module LbbCmsJobOffers
     include Seasonable::ActsAsSeasonable
     extend FriendlyId
     include FriendlyGlobalize
+    include HasSeoFields
 
     validates :name, :description, presence: true
 

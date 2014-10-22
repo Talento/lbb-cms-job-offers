@@ -11,6 +11,9 @@ require 'route_translator'
 require 'friendly_globalize'
 require 'jquery-rails'
 require 'admin_menus'
+require 'faker'
+require 'ckeditor'
+require 'rails-i18n'
 
 module LbbCmsJobOffers
   class Engine < ::Rails::Engine

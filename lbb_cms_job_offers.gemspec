@@ -31,6 +31,8 @@ Gem::Specification.new do |s|
   s.add_dependency "friendly_id-globalize", "~> 1.0.0.alpha1"
   s.add_dependency "route_translator", "~> 3.2.4"
   s.add_dependency "jquery-rails", "~> 3.1.2"
+  s.add_dependency "ckeditor", "~> 4.1.0"
+  s.add_dependency "rails-i18n", "~> 0.6"
 
   s.add_development_dependency "mysql2", "~> 0.3.16"
   s.add_development_dependency "pry", "~> 0.10.1"

@@ -9,6 +9,13 @@ GIT
       globalize-accessors (~> 0.1.5)
 
 GIT
+  remote: git@github.com:the-cocktail/has-seo-fields.git
+  revision: 39f61f65bc13c201f444480940979a09fd935bf7
+  specs:
+    has_seo_fields (0.0.1)
+      rails (~> 4.1.6)
+
+GIT
   remote: git@github.com:the-cocktail/seasonable.git
   revision: 249ef968f080180d526ae5e03d0ec1b9aacc62ff
   specs:
@@ -20,6 +27,7 @@ PATH
   specs:
     lbb_cms_job_offers (0.0.1)
       audited-activerecord (~> 4.0.0)
+      ckeditor (~> 4.1.0)
       friendly_id (~> 5.0.4)
       friendly_id-globalize (~> 1.0.0.alpha1)
       globalize (~> 4.0.2)
@@ -30,6 +38,7 @@ PATH
       nested_form (~> 0.3.2)
       paperclip (~> 4.2.0)
       rails (~> 4.1.6)
+      rails-i18n (~> 0.6)
       route_translator (~> 3.2.4)
       simple_form (~> 3.0.2)
 
@@ -78,6 +87,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    ckeditor (4.1.0)
+      mime-types
+      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -147,6 +159,7 @@ GEM
     nested_form (0.3.2)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
+    orm_adapter (0.5.0)
     paperclip (4.2.0)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -172,6 +185,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.6)
       sprockets-rails (~> 2.0)
+    rails-i18n (0.7.4)
+      i18n (~> 0.5)
     rails-observers (0.1.2)
       activemodel (~> 4.0)
     railties (4.1.6)
@@ -214,6 +229,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   faker (~> 1.4.3)
   friendly_globalize!
+  has_seo_fields!
   lbb_cms_job_offers!
   minitest-rails-capybara (~> 2.1.1)
   minitest-reporters (~> 1.0.5)
