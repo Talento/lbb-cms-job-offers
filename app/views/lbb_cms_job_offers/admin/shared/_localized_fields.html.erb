@@ -1,4 +1,4 @@
-<% tab_id ||= "#{f.object.class.name}_#{f.object.id}" %>
+<% tab_id ||= "#{f.object.class.name.demodulize}_#{f.object.id}" %>
 
 <ul class="nav nav-tabs" role="tablist">
   <% I18n.available_locales.each do |locale| %>
