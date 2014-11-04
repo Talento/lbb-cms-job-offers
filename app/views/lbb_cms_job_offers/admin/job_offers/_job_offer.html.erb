@@ -9,7 +9,7 @@
     <%= job_offer.description %>
   </td>
   <td>
-    <%= link_to "Editar oferta de empleo", edit_admin_job_offer_path(job_offer) %> |
-    <%= link_to "Eliminar oferta de empleo", admin_job_offer_path(job_offer), method: :delete, 'data-confirm' => '¿Estás seguro?' %>
+    <%= link_to t('.edit'), edit_admin_job_offer_path(job_offer) %> |
+    <%= link_to t('.destroy'), admin_job_offer_path(job_offer), method: :delete, 'data-confirm' => t('.confirm') %>
   </td>
 </tr>

@@ -1,0 +1,24 @@
+es:
+  lbb_cms_job_offers:
+    admin:
+      job_offers:
+        index:
+          new: 'Nueva oferta de empleo'
+          no_job_offer: 'No hay ofertas de empleo creadas aun'
+          listing:
+            name: 'Nombre'
+        new:
+          title: 'Nueva oferta de empleo'
+        job_offer:
+          edit: 'Editar'
+          destroy: 'Eliminar'
+          confirm: '¿Estás seguro?'
+        edit:
+          title: 'Editar oferta de empleo'
+          no_applicants: 'Ningún aplicante para esta oferta'
+          applicants: 'Curriculumns recibidos'
+  activerecord:
+    attributes:
+      lbb_cms_job_offers/job_offer:
+          name: 'Nombre'
+          description: 'Descripción'

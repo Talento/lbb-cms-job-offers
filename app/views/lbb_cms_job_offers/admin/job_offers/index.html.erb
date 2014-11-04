@@ -1,17 +1,15 @@
-<%= link_to "Nueva oferta de empleo", new_admin_job_offer_path %>
+<%= link_to t('.new'), new_admin_job_offer_path %>
 
 <% if @job_offers && @job_offers.empty? %>
 
-  <p>
-    No hay ofertas de empleo creadas aun
-  </p>
+  <p><%= t '.no_job_offer' %></p>
 
 <% else %>
 
   <table class="table table-condensed">
     <th>
       <td>
-        Name
+        <%= t '.listing.name' %>
       </td>
     </th>
     <%= render partial: 'job_offer', collection: @job_offers %>

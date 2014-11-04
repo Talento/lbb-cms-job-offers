@@ -12,9 +12,9 @@
       <% fields.each_pair do |field, options| %>
         <% type = options[:type] || :text %>
         <% if options[:input_html] %>
-          <%= f.input "#{field.to_s}_#{locale.to_s}", as: type, input_html: options[:input_html] %>
+          <%= f.input field, as: type, input_html: options[:input_html] %>
         <% else %>
-          <%= f.input "#{field.to_s}_#{locale.to_s}", as: type %>
+          <%= f.input field, as: type %>
         <% end %>
       <% end %>
     </div>
