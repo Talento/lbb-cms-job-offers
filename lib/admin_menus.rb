@@ -7,7 +7,7 @@ module LbbCmsJobOffers
     self.menu_items = [
       {
         key: :job_offers,
-        name: "Ofertas de empleo",
+        name: "job_offers",
         url:  proc { LbbCmsJobOffers::Engine.routes.url_helpers.admin_job_offers_path }
       }
     ]
