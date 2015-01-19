@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "globalize", "~> 4.0.2"
   s.add_dependency "globalize-accessors", "~> 0.1.5"
-  s.add_dependency "simple_form", "~> 3.0.2"
+  s.add_dependency "simple_form", "~> 3.1.0"
   s.add_dependency "nested_form", "~> 0.3.2"
   s.add_dependency "inherited_resources", "~> 1.5.0"
   s.add_dependency "paperclip", "~> 4.2.0"
@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_dependency "route_translator", "~> 3.2.4"
   s.add_dependency "jquery-rails", "~> 3.1.2"
   s.add_dependency "ckeditor", "~> 4.1.0"
-  s.add_dependency "rails-i18n", "~> 0.6"
+  s.add_dependency "rails-i18n", "~> 4.0.3"
 
   s.add_development_dependency "mysql2", "~> 0.3.16"
   s.add_development_dependency "pry", "~> 0.10.1"
