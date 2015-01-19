@@ -4,4 +4,5 @@ module WilsonCmsJobOffers
       'active' if controller_name == menu.to_s
     end
   end
+
 end

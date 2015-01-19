@@ -1,5 +1,5 @@
 module WilsonCmsJobOffers
-  class AdminController < EngineController
-    layout "wilson_cms_job_offers/admin/application"
+  class AdminController < WilsonCms::AdminController    
+    layout "wilson_cms/layouts/admin"
   end
 end
