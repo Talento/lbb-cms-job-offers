@@ -1,4 +1,4 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   class JobApplicationsController < EngineController
 
     inherit_resources

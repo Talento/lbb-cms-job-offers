@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Declare your gem's dependencies in lbb_cms_job_offers.gemspec.
+# Declare your gem's dependencies in wilson_cms_job_offers.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 

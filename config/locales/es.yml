@@ -1,5 +1,5 @@
 es:
-  lbb_cms_job_offers:
+  wilson_cms_job_offers:
     admin:
       job_offers:
         index:
@@ -19,6 +19,6 @@ es:
           applicants: 'Curriculumns recibidos'
   activerecord:
     attributes:
-      lbb_cms_job_offers/job_offer:
+      wilson_cms_job_offers/job_offer:
           name: 'Nombre'
           description: 'Descripción'

@@ -1,4 +1,4 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   class JobOffer < ActiveRecord::Base
     include Seasonable::ActsAsSeasonable
     extend FriendlyId

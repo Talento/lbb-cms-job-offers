@@ -25,7 +25,7 @@ GIT
 PATH
   remote: .
   specs:
-    lbb_cms_job_offers (0.0.1)
+    wilson_cms_job_offers (0.0.1)
       audited-activerecord (~> 4.0.0)
       ckeditor (~> 4.1.0)
       friendly_id (~> 5.0.4)
@@ -230,10 +230,10 @@ DEPENDENCIES
   faker (~> 1.4.3)
   friendly_globalize!
   has_seo_fields!
-  lbb_cms_job_offers!
   minitest-rails-capybara (~> 2.1.1)
   minitest-reporters (~> 1.0.5)
   mysql2 (~> 0.3.16)
   pry (~> 0.10.1)
   pry-remote (~> 0.1.8)
   seasonable!
+  wilson_cms_job_offers!

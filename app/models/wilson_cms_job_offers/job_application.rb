@@ -1,4 +1,4 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   class JobApplication < ActiveRecord::Base
     has_attached_file :cv
     belongs_to :job_offer

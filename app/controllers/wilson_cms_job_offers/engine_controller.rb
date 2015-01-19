@@ -1,4 +1,4 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   class EngineController < ApplicationController
   end
 end

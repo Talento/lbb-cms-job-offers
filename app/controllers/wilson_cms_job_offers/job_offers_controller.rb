@@ -1,9 +1,9 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
 
   class JobOffersController < EngineController
 
     inherit_resources
-    defaults resource_class: LbbCmsJobOffers::JobOffer.friendly
+    defaults resource_class: WilsonCmsJobOffers::JobOffer.friendly
 
     def show
       show! do

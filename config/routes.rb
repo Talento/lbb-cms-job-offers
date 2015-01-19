@@ -1,4 +1,4 @@
-LbbCmsJobOffers::Engine.routes.draw do
+WilsonCmsJobOffers::Engine.routes.draw do
   namespace :admin do
     resources :job_offers
   end

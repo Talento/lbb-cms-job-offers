@@ -15,9 +15,9 @@ require 'faker'
 require 'ckeditor'
 require 'rails-i18n'
 
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   class Engine < ::Rails::Engine
-    isolate_namespace LbbCmsJobOffers
+    isolate_namespace WilsonCmsJobOffers
 
     # Use minitest-spec by default
     config.generators do |g|

@@ -4,12 +4,12 @@ FactoryGirl.define do
   job_offer_name = "#{Faker::Name.name} offer"
   job_offer_description = Faker::Lorem.paragraph 5
 
-  factory :job_offer, class: LbbCmsJobOffers::JobOffer do
+  factory :job_offer, class: WilsonCmsJobOffers::JobOffer do
     name job_offer_name
     description job_offer_description
   end
 
-  factory :job_offer_with_application, class: LbbCmsJobOffers::JobOffer do
+  factory :job_offer_with_application, class: WilsonCmsJobOffers::JobOffer do
     name job_offer_name
     description job_offer_description
     factory :job_applications do

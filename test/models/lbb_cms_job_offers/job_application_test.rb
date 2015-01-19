@@ -1,6 +1,6 @@
 require "test_helper"
 
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   describe JobApplication do
     let(:job_application) { JobApplication.new }
 

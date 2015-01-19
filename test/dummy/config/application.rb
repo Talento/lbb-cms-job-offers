@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "lbb_cms_job_offers"
+require "wilson_cms_job_offers"
 
 module Dummy
   class Application < Rails::Application

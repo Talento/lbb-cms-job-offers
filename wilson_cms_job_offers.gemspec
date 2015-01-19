@@ -1,12 +1,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "lbb_cms_job_offers/version"
+require "wilson_cms_job_offers/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "lbb_cms_job_offers"
-  s.version     = LbbCmsJobOffers::VERSION
+  s.name        = "wilson_cms_job_offers"
+  s.version     = WilsonCmsJobOffers::VERSION
   s.authors     = ["Antonio J Rossi", "Alejandro León"]
   s.email       = ["antonio.rossi@the-cocktail.com", "alejandro.leon@the-cocktail.com"]
   s.homepage    = ""

@@ -13,39 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20141022101625) do
 
-  create_table "lbb_cms_job_offers_job_applications", force: true do |t|
-    t.integer  "job_offer_id"
-    t.string   "cv_file_name"
-    t.string   "cv_content_type"
-    t.integer  "cv_file_size"
-    t.datetime "cv_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "lbb_cms_job_offers_job_applications", ["job_offer_id"], name: "index_lbb_cms_job_offers_job_applications_on_job_offer_id", using: :btree
-
-  create_table "lbb_cms_job_offers_job_offer_translations", force: true do |t|
-    t.integer  "lbb_cms_job_offers_job_offer_id", null: false
-    t.string   "locale",                          null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "name"
-    t.text     "description"
-    t.string   "slug"
-  end
-
-  add_index "lbb_cms_job_offers_job_offer_translations", ["lbb_cms_job_offers_job_offer_id"], name: "index_794a75d334e8ee80e2f75cf10f77ff5b2bdf5be6", using: :btree
-  add_index "lbb_cms_job_offers_job_offer_translations", ["locale"], name: "index_lbb_cms_job_offers_job_offer_translations_on_locale", using: :btree
-
-  create_table "lbb_cms_job_offers_job_offers", force: true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "season_constrains", force: true do |t|
     t.datetime "starts_at"
     t.datetime "ends_at"
@@ -79,5 +46,38 @@ ActiveRecord::Schema.define(version: 20141022101625) do
   end
 
   add_index "seo_tags", ["seo_taggable_type", "seo_taggable_id"], name: "seo_tags_taggable", using: :btree
+
+  create_table "wilson_cms_job_offers_job_applications", force: true do |t|
+    t.integer  "job_offer_id"
+    t.string   "cv_file_name"
+    t.string   "cv_content_type"
+    t.integer  "cv_file_size"
+    t.datetime "cv_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "wilson_cms_job_offers_job_applications", ["job_offer_id"], name: "index_wilson_cms_job_offers_job_applications_on_job_offer_id", using: :btree
+
+  create_table "wilson_cms_job_offers_job_offer_translations", force: true do |t|
+    t.integer  "wilson_cms_job_offers_job_offer_id", null: false
+    t.string   "locale",                             null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.text     "description"
+    t.string   "slug"
+  end
+
+  add_index "wilson_cms_job_offers_job_offer_translations", ["locale"], name: "index_wilson_cms_job_offers_job_offer_translations_on_locale", using: :btree
+  add_index "wilson_cms_job_offers_job_offer_translations", ["wilson_cms_job_offers_job_offer_id"], name: "index_ca3dfc69be25f1e25859f36301703123f459fa79", using: :btree
+
+  create_table "wilson_cms_job_offers_job_offers", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

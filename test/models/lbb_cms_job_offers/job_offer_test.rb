@@ -1,6 +1,6 @@
 require "test_helper"
 
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   describe JobOffer do
     describe "#fields " do
       let(:job_offer) { JobOffer.new }
@@ -68,7 +68,7 @@ module LbbCmsJobOffers
         end
         
         it "must have seo tag with attributes specified" do
-          job_offer = LbbCmsJobOffers::JobOffer.create(@attrs)
+          job_offer = WilsonCmsJobOffers::JobOffer.create(@attrs)
           job_offer.seo_tag.wont_be_nil
         end
       end

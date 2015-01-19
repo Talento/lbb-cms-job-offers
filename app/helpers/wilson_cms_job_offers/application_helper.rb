@@ -1,4 +1,4 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   module ApplicationHelper
   end
 end

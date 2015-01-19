@@ -1,4 +1,4 @@
-module LbbCmsJobOffers
+module WilsonCmsJobOffers
   class Admin::JobOffersController < AdminController
     inherit_resources
     defaults route_prefix: 'admin', resource_class: JobOffer.friendly
