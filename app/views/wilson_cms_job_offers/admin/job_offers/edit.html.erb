@@ -2,12 +2,12 @@
   <div class="panel-heading">
     <h3 class="panel-title"><%= t '.title' %></h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body"
     <%= render partial: 'form' %>
   </div>
   <div class="panel-body">
     <% if @job_offer.job_applications.empty? %>
-      <p><%= t '.no_applicants' %></p>
+    <p><%= t '.no_applicants' %></p>
     <% end %>
   </div>
   <div class="panel-heading">

@@ -1,8 +1,7 @@
 <%= link_to t('.new'), new_admin_job_offer_path %>
-
 <% if @job_offers && @job_offers.empty? %>
 
-  <p><%= t '.no_job_offer' %></p>
+  <p><%= t('.no_job_offer') %></p>
 
 <% else %>
 
