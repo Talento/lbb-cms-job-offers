@@ -10,7 +10,6 @@ require 'friendly_id/globalize'
 require 'route_translator'
 require 'friendly_globalize'
 require 'jquery-rails'
-require 'faker'
 require 'ckeditor'
 require 'rails-i18n'
 
