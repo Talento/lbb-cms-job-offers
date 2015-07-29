@@ -12,6 +12,7 @@ require 'friendly_globalize'
 require 'jquery-rails'
 require 'ckeditor'
 require 'rails-i18n'
+require 'seasonable'
 
 module WilsonCmsJobOffers
   class Engine < ::Rails::Engine
