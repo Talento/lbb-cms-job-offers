@@ -19,8 +19,8 @@ module WilsonCmsJobOffers
 
     def permitted_params
       params.permit(job_offer: [:name, :description,
-                                season_constrains_attributes: [:id, 'starts_at(3i)', 'starts_at(2i)', 'starts_at(1i)',
-                                                               'ends_at(3i)', 'ends_at(2i)', 'ends_at(1i)']])
+                                season_constrains_attributes: [:id, :starts_at, :ends_at]
+                                ])
     end
 
   end
