@@ -2,8 +2,10 @@
   <div class="panel-heading">
     <h3 class="panel-title"><%= t '.title' %></h3>
   </div>
-  <div class="panel-body"
-    <%= render partial: 'form' %>
+  <div class="panel-body">
+    <%= simple_nested_form_for [:admin, @job_offer], url: admin_job_offer_path(id: @job_offer.id), method: :put  do |f| %>
+      <%= render partial: 'form', locals: {f: f} %>
+    <% end %>
   </div>
   <div class="panel-body">
     <% if @job_offer.job_applications.empty? %>

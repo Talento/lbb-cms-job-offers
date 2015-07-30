@@ -9,7 +9,7 @@
     <%= job_offer.description %>
   </td>
   <td>
-    <%= link_to t('.edit'), edit_admin_job_offer_path(job_offer) %> |
-    <%= link_to t('.destroy'), admin_job_offer_path(job_offer), method: :delete, data:{confirm: t('.confirm')} %>
+    <%= link_to t('.edit'), edit_admin_job_offer_path(id: job_offer.id) %> |
+    <%= link_to t('.destroy'), admin_job_offer_path(id: job_offer.id), method: :delete, data:{confirm: t('.confirm')} %>
   </td>
 </tr>
