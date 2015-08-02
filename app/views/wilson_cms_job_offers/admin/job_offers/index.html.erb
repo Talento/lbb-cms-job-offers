@@ -1,17 +1,6 @@
-<%= link_to t('.new'), new_admin_job_offer_path %>
-<% if @job_offers && @job_offers.empty? %>
-
-  <p><%= t('.no_job_offer') %></p>
-
-<% else %>
-
-  <table class="table table-condensed">
-    <th>
-      <td>
-        <%= t '.listing.name' %>
-      </td>
-    </th>
-    <%= render partial: 'job_offer', collection: @job_offers %>
-  </table>
-
-<% end %>
+<%= render_index_for WilsonCmsJobOffers::JobOffer, @job_offers,
+filter_tags: [],
+fields: [listing_header('#', {}),
+  listing_header(t('.listing.name'), {}),
+  listing_header(t('.listing.summary'), {}),
+  ] %>

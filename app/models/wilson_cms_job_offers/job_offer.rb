@@ -14,6 +14,8 @@ module WilsonCmsJobOffers
 
     accepts_nested_attributes_for :job_applications
 
+    scope :with_name, ->(name){where("name like '%#{name}%'")}
+
     private
     def should_generate_new_friendly_id?
       slug.blank? || name_changed?

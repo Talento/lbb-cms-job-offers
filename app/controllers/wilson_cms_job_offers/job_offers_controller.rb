@@ -23,5 +23,4 @@ module WilsonCmsJobOffers
 
   end
 
-
 end
