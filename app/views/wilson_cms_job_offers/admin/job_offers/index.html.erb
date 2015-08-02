@@ -1,5 +1,5 @@
 <%= render_index_for WilsonCmsJobOffers::JobOffer, @job_offers,
-filter_tags: [],
+model: :table,
 fields: [listing_header('#', {}),
   listing_header(t('.listing.name'), {}),
   listing_header(t('.listing.summary'), {}),

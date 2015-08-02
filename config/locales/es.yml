@@ -5,6 +5,7 @@ es:
         index:
           new: 'Nueva oferta de empleo'
           no_job_offer: 'No hay ofertas de empleo creadas aun'
+          filter_placeholder: 'Buscar por nombre'
           listing:
             name: 'Nombre'
         new:

@@ -1,13 +1,7 @@
 <tr>
-  <td>
-    <%= job_offer.id %>
-  </td>
-  <td>
-    <%= job_offer.name %>
-  </td>
-  <td>
-    <%= job_offer.description %>
-  </td>
+  <td> <%= job_offer.id %> </td>
+  <td> <%= job_offer.name %> </td>
+  <td> <%= job_offer.description %> </td>
   <td>
     <%= link_to t('.edit'), edit_admin_job_offer_path(id: job_offer.id) %> |
     <%= link_to t('.destroy'), admin_job_offer_path(id: job_offer.id), method: :delete, data:{confirm: t('.confirm')} %>
