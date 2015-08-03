@@ -1,0 +1,24 @@
+<p>
+  <strong> <%= t('.name') %> </strong>
+  <span> <%= @job_application.name %> </span>
+</p>
+
+<p>
+  <strong> <%= t('.email') %> </strong>
+  <span> <%= @job_application.email %> </span>
+</p>
+
+<p>
+  <strong> <%= t('.phone_number') %> </strong>
+  <span> <%= @job_application.phone_number %> </span>
+</p>
+
+<p>
+  <strong> <%= t('.linkedin_profile') %> </strong>
+  <span> <%= @job_application.linkedin_profile %> </span>
+</p>
+
+<p>
+  <strong> <%= t('.curriculum') %> </strong>
+  <%= link_to  @job_application.cv_file_name, @job_application.cv.url %>
+</p>

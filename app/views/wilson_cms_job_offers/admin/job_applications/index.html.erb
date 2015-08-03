@@ -1,0 +1,7 @@
+<%= render_index_for WilsonCmsJobOffers::JobApplication, @job_applications,
+model: :table,
+fields: [listing_header('#', {}),
+  listing_header(t('.listing.name'), {}),
+  listing_header(t('.listing.offer_name'), {}),
+  ],
+new_resource_path: nil %>

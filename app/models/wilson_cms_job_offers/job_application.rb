@@ -4,5 +4,8 @@ module WilsonCmsJobOffers
     belongs_to :job_offer
 
     validates_attachment :cv, content_type: { content_type: ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"] }
+
+    scope :with_name, ->(name){where("name like '%#{name}%' or email like '%#{name}%'")}
+
   end
 end

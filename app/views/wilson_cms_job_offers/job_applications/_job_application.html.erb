@@ -1,0 +1,10 @@
+<tr>
+  <td> <%= job_application.id %> </td>
+  <td> <%= job_application.name %> </td>
+  <td> <%= job_application.job_offer.try(:name) %> </td>
+  <td>
+    <%= link_to admin_job_application_path(id: job_application.id), class: 'btn btn-default' do %>
+      <span class="fa fa-eye"></span>
+    <% end %>
+  </td>
+</tr>

@@ -8,6 +8,7 @@ es:
           filter_placeholder: 'Buscar por nombre'
           listing:
             name: 'Nombre'
+          listing_title: 'Listado de ofertas'
         new:
           title: 'Nueva oferta de empleo'
         job_offer:
@@ -18,8 +19,18 @@ es:
           title: 'Editar oferta de empleo'
           no_applicants: 'Ningún aplicante para esta oferta'
           applicants: 'Curriculumns recibidos'
+      job_applications:
+        index:
+          filter_placeholder: Buscar por nombre o email
+          listing_title: Curriculums recibidos
+          listing:
+            name: 'Nombre y apellidos'
+            offer_name: 'Puesto'
   activerecord:
     attributes:
       wilson_cms_job_offers/job_offer:
           name: 'Nombre'
           description: 'Descripción'
+      wilson_cms_job_offers/job_application:
+        name: 'Nombre'
+        email: 'Email'
