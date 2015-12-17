@@ -3,7 +3,7 @@ module WilsonCmsJobOffers
     has_attached_file :cv
     belongs_to :job_offer
 
-    validates_attachment :cv, content_type: { content_type: ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"] }
+    validates_attachment_file_name :cv, :matches => [/doc\Z/, /docx\Z/, /pages\Z/, /pdf\Z/, /odt\Z/, /ods\Z/, /odp\Z/]
 
     validates :cv, :name, :email,  presence: true
 
